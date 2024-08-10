@@ -1,5 +1,5 @@
 
-package com.example.blog;
+package com.example.blog.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
 
-    private long id;
+    private Long id;
     private String username;
     private String password;
     private String email;
@@ -28,11 +28,11 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
+    public String getUserName() {
         return username;
     }
 
-    public void setUsername(String username) {
+    public void setUserName(String username) {
         this.username = username;
     }
 

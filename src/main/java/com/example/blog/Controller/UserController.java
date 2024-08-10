@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.example.blog.controller;
 
-import com.example.demo.model.User;
-import com.example.demo.service.UserService;
+import com.example.blog.model.User;
+import com.example.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +21,7 @@ public class UserController {
     }
     @PostMapping 
     public ResponseEntity<User> createUser(@RequestBody User user){
-        User createUser = userService.saveUser(user);
+        User createdUser = userService.saveUser(user);
         return ResponseEntity.ok(createdUser);
     }
     @GetMapping("/{id}")
@@ -50,7 +50,7 @@ public class UserController {
         }
     }
     @DeleteMapping("/{id}")
-    public ResponseEntity<void> deleteUser (@PathVariable Long id){
+    public ResponseEntity<Void> deleteUser (@PathVariable Long id){
         userService.deleteUser(id);
         return ResponseEntity.noContent().build();
     }

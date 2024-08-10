@@ -1,11 +1,11 @@
 
-package com.example.demo.service.impl;
+package com.example.blog.service;
 
-import com.example.demo.model.User;
-import com.example.demo.repository.UserRepository;
-import com.example.demo.service.UserService;
+import com.example.blog.model.User;
+import com.example.blog.repository.UserRepository;
+import com.example.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.streotype.servicez;
+import org.springframework.stereotype.Service;
 
 
 import java.util.List;
@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
     }
     @Override
     public User updateUser(Long id, User user){
-        if (userRepository.exsistsById(id)){
+        if (userRepository.existsById(id)){
             user.setId(id);
             return userRepository.save(user);
         }

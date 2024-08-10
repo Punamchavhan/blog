@@ -1,11 +1,11 @@
 
-package com.example.demo.service.impl;
+package com.example.blog.service;
 
-import com.example.demo.model.Post;
-import com.example.demo.repository.PostRepository;
-import com.example.demo.service.PostService;
+import com.example.blog.model.Post;
+import com.example.blog.repository.PostRepository;
+import com.example.blog.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.streotype.servicez;
+import org.springframework.stereotype.Service;
 
 
 import java.util.List;
@@ -34,12 +34,12 @@ public class PostServiceImpl implements PostService{
         return post.orElse(null);
     }
     @Override
-    public List<Post> getAllPost() {
+    public List<Post> getAllPosts() {
         return postRepository.findAll();
     }
     @Override
     public Post updatePost(Long id, Post post){
-        if (postRepository.exsistsById(id)){
+        if (postRepository.existsById(id)){
             post.setId(id);
             return postRepository.save(post);
         }
