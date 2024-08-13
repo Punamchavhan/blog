@@ -96,7 +96,7 @@ public class UserServiceImplTest {
         assertNotNull(result);
         assertEquals("newusername", result.getUserName());
         verify(userRepository, times(1)).existsById(1L);
-        verify(userRepository, times(1)).save(updatedUser);
+        verify(userRepository, times(1)).save(existingUser);
     }
 
         @Test

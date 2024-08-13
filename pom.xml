@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>blog</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>demo</name>
-    <description>Demo project for Spring Boot</description>
+    <name>blog</name>
+    <description>blog project for Spring Boot</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -49,11 +49,7 @@
         <scope>test</scope>
         </dependency>
 
-        <dependency>
-        <groupId>com.h2database</groupId>
-        <artifactId>h2</artifactId>
-        <scope>runtime</scope>
-        </dependency>
+        
 
     <!-- MySQL Driver (if using MySQL database) -->
         <dependency>
@@ -75,6 +71,15 @@
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
         </dependency>
+
+        <dependency>
+     <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.10.0</version>
+    <scope>test</scope>
+        </dependency>
+
+        
         <!-- Add other dependencies as needed -->
     </dependencies>
 
