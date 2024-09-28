@@ -28,8 +28,4 @@ Prerequisites:
 Java 17
 Maven 3.8+
 Git
-Installation
-Clone the repository:
-
-b
 
