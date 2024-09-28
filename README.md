@@ -4,17 +4,7 @@ OverView:
 
 The blog platform is a simple web application that allows users to create, manage, and view blog posts. It is built using Spring Boot, leveraging a layered architecture that includes a RESTful API, service layer, repository layer, and JPA entities.
 
-*Features*
 
-User Management:
-Create, update, and delete user accounts.
-Secure password storage.
-Retrieve user details by ID.
-
-Post Management:
-Create, update, and delete blog posts.
-Associate posts with specific authors (users).
-View individual posts or a list of all posts.
 
 *Technologies Used*
 
